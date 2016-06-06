@@ -1,0 +1,12 @@
+Generate the lex file (if you don't have mllex, just use the one already generated):
+        mllex L1.lex (outputs L1.lex.sml)
+
+For sml/nj:
+
+start up sml:
+- CM.make "sandbox.cm";
+- open Sandbox;
+
+For mlton (compiled, so not so useful when not printing):
+Compile (slow since mlton does whole program analysis):
+        mlton L1.mlb
